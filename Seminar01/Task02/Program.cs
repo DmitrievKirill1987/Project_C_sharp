@@ -12,6 +12,11 @@ int N = Convert.ToInt32(Console.ReadLine());
 // }
 // Console.WriteLine();
 
+if(N < 0)
+{
+    N = -N;
+}
+
 Console.Write("Все целые числа: ");
 for(int i = -N; i <= N; i++)
 {
