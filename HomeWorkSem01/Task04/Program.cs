@@ -12,12 +12,15 @@ if ((a == b) && (b == c))
 {
     Console.WriteLine("Числа между собой равны");
 }
- if (max < b)
+else
 {
-   max = b;
+    if (max < b)
+    {
+        max = b;
+    }
+    if (max < c)
+    {
+        max = c;
+    }
+    Console.WriteLine($"Число {max} наибольшее");
 }
-if (max < c)
-{
-    max = c;
-}
-Console.WriteLine($"Число {max} наибольшее");
