@@ -2,11 +2,11 @@
 // и на выходе показывает вторую цифру этого числа.
 
 Console.Write("Введите трехзначное число: ");
-int N = Convert.ToInt32(Console.ReadLine());
+int N = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-if((N > 99 && N < 1000)||(N > -1000 && N < -99)) 
+if(N > 99 && N < 1000) 
 {
-    Console.WriteLine($"Вторая цифра числа: {Math.Abs((N % 100)/10)}");
+    Console.WriteLine($"Вторая цифра числа: {(N % 100)/10}");
 }
 else 
 {
