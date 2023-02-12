@@ -6,12 +6,17 @@ int day = Convert.ToInt32(Console.ReadLine());
 
 switch (day)
 {
-    case 1: case 2: case 3: case 4: case 5:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
         {
             Console.WriteLine("Будний день :-(");
             break;
         }
-    case 6: case 7:
+    case 6:
+    case 7:
         {
             Console.WriteLine("Выходной день! :-)");
             break;
