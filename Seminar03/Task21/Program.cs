@@ -14,4 +14,4 @@ coords2[1] = Convert.ToInt32(Console.ReadLine());
 
 double dis = Math.Round(Math.Sqrt(Math.Pow((coords1[0] - coords2[0]), 2) + Math.Pow((coords1[1] - coords2[1]), 2)), 2);
 
-Console.WriteLine($"Расстояние между точками: {dis}");
+Console.WriteLine($"Расстояние между точками: {dis}.");
