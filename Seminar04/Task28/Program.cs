@@ -9,12 +9,21 @@ int ReadInt(string text)
 int Factorial(int A)
 {
     int sum = 1;
-    //добавить ругательства на -
-    for (int i = 2; i <= A; i++)
+    if (A < 0) 
     {
-        sum *= i;
+        Console.WriteLine("Факториала отрицательного числа не существует");
+        return -1;
     }
-    return sum;
+    else if (A == 0) return sum;
+    else
+    {
+        for (int i = 2; i <= A; i++)
+        {
+            sum *= i;
+        }
+        return sum;
+    }
 }
 
-Console.WriteLine($"Произведение чисел = {Factorial(ReadInt("Введите число N: "))}.");
+int number = ReadInt("Введите число N: ");
+Console.WriteLine($"Факториал = {Factorial(number)}.");

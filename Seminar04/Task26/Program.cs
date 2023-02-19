@@ -1,5 +1,6 @@
 ﻿// Программа принимает на вход число и выдает количество цифр в числе
 
+// 1 способ
 string? ReadStr(string text)
 {
     Console.Write(text);
@@ -9,6 +10,7 @@ string? ReadStr(string text)
 string? str = ReadStr("Введите число: ");
 Console.WriteLine($"В числе {str} {str.Length} цифр.");
 
+// 2 способ
 int ReadInt(string text)
 {
     Console.Write(text);
