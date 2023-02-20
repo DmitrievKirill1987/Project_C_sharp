@@ -16,7 +16,7 @@ int Sum(int A)
     return sum;
 }
 
-int number = ReadInt("Введите число A: ");
+int number = ReadInt("Введите число А: ");
 Console.WriteLine($"Сумма чисел от 1 до {number} = {Sum(number)}.");
 
 number = ReadInt("Введите число B: ");
